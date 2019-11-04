@@ -2,8 +2,8 @@
 title: BI、数据可视化工具浅析整理
 date: 2019-11-03 16:21:04
 categories: 
- -[Metabase]
- -[可视化工具]
+ - [Metabase]
+ - [可视化工具]
 tags:
  - BI
  - Metabase
