@@ -1,5 +1,5 @@
 ---
-title: Metabase-BI系列：二次开发环境(windows)搭建
+title: Metabase-BI系列01：二次开发环境(windows)搭建
 date: 2019-11-04 23:54:03
 categories: 
  - [Metabase]
