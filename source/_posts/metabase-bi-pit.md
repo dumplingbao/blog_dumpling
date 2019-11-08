@@ -9,6 +9,8 @@ tags:
  - Metabase
 ---
 由于github源代码开发者用的linux或者mac来作为开发环境，所以存在windows环境下的不友好，有的甚至就是坑。甚至好多Metabase windows开发者也是用linux虚拟机来跑环境的。
+
+当然如果通过虚拟机跑linux，或者用windows自带的Ubuntu进行开发，有些问题就不存在了，还有一种好的方式用git的bash环境去搭建，可参见：`Metabase-BI系列03：win系统用git-bash启动Metabase`。
 <!--more-->
 ## 坑一：git-clone源码编码LF问题
 
