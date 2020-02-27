@@ -41,7 +41,23 @@ git config --global core.safecrlf warn   //提交包含混合换行符文件给�
 "preinstall": "echo $npm_execpath | grep -q yarn || echo '\\033[0;33mSorry, npm is not supported. Please use Yarn (https://yarnpkg.com/).\\033[0m'",
 ```
 
-## 坑三：lein ring server文件名扩展名报错
+## 坑三：NODE_ENV不是内部或外部命令
+
+在install的时候，NODE_ENV不是内部或者外部命令，其实这个还是linux和windows的问题
+
+```
+linux： NODE_ENV=hot 
+windows: set NODE_ENV=hot
+```
+
+所以说windows下，直接加个set就可以了，或者去掉里面的，先set变量，再install。
+
+注意：这个是热部署的变量，如果需要热部署，这个命令不能少。
+
+![node_env](https://ossbao.oss-cn-qingdao.aliyuncs.com/blog/pit/node_env.png)
+
+
+## 坑四：lein ring server文件名扩展名报错
 
 ```
 Compilation failed: Cannot run program "java" (in directory "D:\metabase"): CreateProcess error=206, 文件名或扩展名太长。
@@ -51,7 +67,7 @@ Compilation failed: Cannot run program "java" (in directory "D:\metabase"): Crea
 
 这个问题是windows系统导致的，如果是win10或许可以解除这个长度限制，如果是win7或者更早的windows版本估计不好解决，就不能用热部署了，但是lein run是可以的
 
-## 坑四：自动创建仪表板(数据透视)的问题
+## 坑五：自动创建仪表板(数据透视)的问题
 
 登录首页后，一直发请求，html 500错误
 
@@ -85,7 +101,7 @@ Status Code:  500 Server Error
 
 
 
-## 坑五：数据源、中文汉化包不自动生成问题
+## 坑六：数据源、中文汉化包不自动生成问题
 
 正常情况下会在，安装目录/plugins下生成数据库驱动包，如果没有新增数据库只能选择默认的几种数据库类型
 
@@ -97,6 +113,6 @@ Status Code:  500 Server Error
 
 windows下有些shell脚本命令是不能正常运行的，所以导致不能正常生成，可以直接下载放到相应目录底下，数据库驱动包也可以到module各个驱动目录下面直接lein uberjar生成，这种生成容易发生依赖包不一致报错的问题。
 
-## 问题六：Metabase多版本jar包冲突
+## 问题七：Metabase多版本jar包冲突
 
 Metabase里面有很多分支，有些是版本分支，如果用到新老板，就不要把不同版交叉使用，Metabase在运行时正常会检测并清理，一旦出现检查存在又不进行清除更新就会出现jar包冲突。
