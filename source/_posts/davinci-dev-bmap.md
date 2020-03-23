@@ -149,6 +149,14 @@ Davinci 使用的就是阿里的iconfont，所以这了也建议使用，存放�
 
 数据量级跨度较大的数据，不能很好的展示气泡大小显示效果，可以用最大最小值做一些简单的处理，期待有更好的算法规则。
 
+## 经纬度设置问题
+
+百度地图需要经纬度定位，图表维度里面需要拖入经纬度，并且需要提前设置维度类型为经纬度才可以。
+
+![jwd](https://ossbao.oss-cn-qingdao.aliyuncs.com/blog/davinci/02/jwd.jpg)
+
+![jwd02](https://ossbao.oss-cn-qingdao.aliyuncs.com/blog/davinci/02/jwd02.jpg)
+
 # 交流学习
 
 刚建的群，学习Metabase、Davinci等开源BI，群号：72569367，感兴趣的可以加一下。
