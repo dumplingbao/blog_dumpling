@@ -35,10 +35,9 @@ Davinci 是宜信出品的DVaaS（数据可视化及服务）的一款BI产品�
 
 Davinci 采用前端分离的方式，后端java系，前端react，图表echarts。
 
-**前端**：Antd + dva + ES6 + TypeScript + WebPack
+**前端**：Antd + ES6 + TypeScript + WebPack
 
 - [Antd](https://ant.design/index-cn)：Ant Design of React，基于 Ant Design 设计体系的 React UI 组件库，是蚂蚁金服一套开箱即用的高质量 React 组件，Davici 用Reac 实现，此外Ant Design 还有 Angular、Vue 的实现
-- [dva](https://dvajs.com/)：基于React和redux的轻量级elm风格框架，这个很重要，前端修改就必须清楚dva的数据流向，如果有机会，可以单独介绍
 - ES6：新一代js语法，过！
 - TypeScript：一种由微软开发的[开源](https://baike.baidu.com/item/开源/246339)、跨平台的编程语言，[JavaScript](https://baike.baidu.com/item/JavaScript)的超集，最终会被编译为JavaScript代码
 - WebPack：打包工具，过！
