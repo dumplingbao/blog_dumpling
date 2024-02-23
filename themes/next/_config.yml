@@ -152,9 +152,30 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
+# - nickname: AcFun-九星之歌
+#   avatar: https://tx-free-imgs2.acfun.cn/kimg/bs2/zt-image-host/ChQwOGZkYmIwOTEwY2JjM2JlOWUwNBCYzNcv.png
+#   site: https://www.acfun.cn/u/2176158.aspx
+#   info: 关注你很久了
+
+# - nickname: B站-铃木爱理暗中观察团团长
+#   avatar: https://i1.hdslb.com/bfs/face/eaeaf7c36e79a44358f1…jpg@240w_240h_1c_1s_!web-avatar-space-header.avif
+#   site: https://space.bilibili.com/16873486/
+#   info: 关注你很久了
+
+# - nickname: 煎蛋
+#   avatar: https://jandan.net/wp-content/themes/egg/images/logo-2018.gif
+#   site: http://jandan.net/
+#   info: 关注你很久了
+
+# - nickname: 芈渡
+#   avatar: https://www.lllomh.com/static/images/photos.jpg
+#   site: https://www.lllomh.com/
+#   info: 开发日常
+
   AcFun-九星之歌: https://www.acfun.cn/u/2176158.aspx
   B站-铃木爱理暗中观察团团长: https://space.bilibili.com/16873486/
   煎蛋: http://jandan.net/
+  芈渡(开发日常): https://www.lllomh.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
